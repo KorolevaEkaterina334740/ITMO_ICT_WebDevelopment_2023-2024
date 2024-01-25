@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Детали полета</title>
+    <link rel="stylesheet" href="../../static/style.css">
+</head>
+<body>
+<div class="pages">
+    <a class="link" href="{% url 'profile' %}">вернуться назад</a>
+</div>
+<table>
+    <tr>
+        <th>Номер рейса</th>
+        <th>Наименование <br>компании</th>
+        <th>Номер самолета</th>
+        <th>Gate</th>
+        <th>Посадочное место</th>
+        <th>Время отправления</th>
+        <th>Время прибытия</th>
+    </tr>
+    <tr>
+        <td>{{ flight.id }}</td>
+        <td>{{ flight.company_name }}</td>
+        <td>{{ flight.plane_number }}</td>
+        <td>{{ flight.gate }}</td>
+        <td>{{ flight.seat_place }}</td>
+        <td>{{ flight.date_departures }}</td>
+        <td>{{ flight.date_arrivals }}</td>
+    </tr>
+</table>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Отправить</button>
+</form>
+
+<div class="comment">
+    {% for comment in user_comments %}
+    <div class="item">
+        <p>Имя пользователя: {{ comment.booking.user.first_name }}</p>
+        <p>Рейтинг: {{ comment.rate }}</p>
+        <p>Комментарий: {{ comment.text }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

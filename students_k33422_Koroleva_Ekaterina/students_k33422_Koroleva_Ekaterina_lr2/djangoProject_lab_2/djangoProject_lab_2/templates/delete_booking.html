@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отмена брони </title>
+    <link rel="stylesheet" href="../../static/style.css">
+</head>
+<body>
+<a class="link" href="{% url 'profile' %}">вернуться назад</a>
+<br>
+<p>Вы уверены, что хотите отменить бронь?</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <button type="submit">Отменить</button>
+</form>
+</body>
+</html>

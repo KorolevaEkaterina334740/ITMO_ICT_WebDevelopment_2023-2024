@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>register_form</title>
+	  <link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body>
+	    <form method="POST">
+		    {% csrf_token %}
+		    {{ form.as_p }}
+		    <button type="submit">Зарегистрироваться</button>
+	    </form>
+	    <p class="str">Если у вас есть аккаунт, <a class="link-str" href="{% url 'login' %}">Авторизироваться</a></p>
+
+  </body>
+</html>

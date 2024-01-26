@@ -1,0 +1,11 @@
+site_name: My Docs
+
+theme:
+  name: material
+
+nav:
+  - "Лабораторная работа 1": docs/lab1.md
+  - "Лабораторная работа 2": docs/lab2.md
+  - "Лабораторная работа 3": docs/lab3.md
+  - "Лабораторная работа 4": docs/lab4.md
+

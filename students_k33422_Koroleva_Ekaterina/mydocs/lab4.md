@@ -1,0 +1,13 @@
+site_name: "My Docs"
+
+nav:
+  - "Документация по Лабораторной работе": "lab_documentation.md"
+  - "Стили": "styles.md"
+  - "Переменные состояния data()": "state_variables.md"
+  - "Запросы к серверу": "server_requests.md"
+  - "Роутинг": "routing.md"
+  - "Компоненты": "components.md"
+  - "HomeWiev": "home_view.md"
+  - "AddShedul": "add_schedule.md"
+  - "Students": "students.md"
+  - "StudentsCreate и StudentsEdit": "students_create_and_edit.md"

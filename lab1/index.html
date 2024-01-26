@@ -1,0 +1,611 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../lab2/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
+    
+    
+      
+        <title>Lab1 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lab1
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>Задача 1
+Описание
+Эта задача представляет собой клиент-серверное взаимодействие с использованием протокола UDP. Клиент отправляет серверу приветственное сообщение, сервер его принимает и отвечает.</p>
+<p>Код
+Клиент (client.py)
+python
+Copy code
+from socket import *</p>
+<p>message = "Hello, server!"
+encoded_message = str.encode(message)</p>
+<p>HOST = ('localhost', 10000)
+client = socket(AF_INET, SOCK_DGRAM)</p>
+<p>client.sendto(encoded_message, HOST)
+server_message = client.recvfrom(1024)
+message_info = server_message[0].decode()
+print(message_info)
+Сервер (server.py)
+python
+Copy code
+from socket import *</p>
+<h1 id="_1">Настраиваем хост</h1>
+<p>host = 'localhost'
+port = 10000
+host_data = (host, port)</p>
+<p>udp_socket = socket(AF_INET, SOCK_DGRAM)
+udp_socket.bind(host_data)</p>
+<p>conn, addr = udp_socket.recvfrom(1024)
+print(conn.decode())
+udp_socket.sendto(b"Hello, client!", addr)</p>
+<p>Задача 2
+Описание
+Эта задача также представляет собой клиент-серверное взаимодействие, но с использованием протокола TCP. Клиент отправляет серверу сообщение с запросом на решение задачи по теореме Пифагора, сервер отвечает, решая задачу.</p>
+<p>Код
+Клиент (client.py)
+python
+Copy code
+from socket import *
+from math import sqrt</p>
+<p>message = "Hello, server!"
+encoded_message = str.encode(message)</p>
+<p>HOST = (gethostname(), 10000)
+client = socket(AF_INET, SOCK_STREAM)
+client.connect(HOST)
+server_message = client.recv(1024).decode()</p>
+<p>print(server_message)
+user_input = int(input())</p>
+<p>if user_input == 1:
+    print("Введите значения катетов через запятую")
+else:
+    print("Введите значения гипотенузы и катета через запятую")</p>
+<p>input_data = input()
+print(str(user_input) + input_data)
+client.sendall((str(user_input) + input_data).encode())</p>
+<p>answer = client.recv(1024).decode()
+print(answer)
+Сервер (server.py)
+python
+Copy code
+from socket import *
+from math import sqrt</p>
+<p>def find_hip(data: [int]):
+    a = data[0]
+    b = data[1]
+    c = sqrt(a<strong>2 + b</strong>2)
+    return c</p>
+<p>def find_cat(data: [int]):
+    c = data[0]
+    a = data[1]
+    b = sqrt(c<strong>2 - a</strong>2)
+    return b</p>
+<p>hello_message = "Вас приветствует сервер для решения теоремы пифагора.\n " \
+                "Пожалуйста, при помощи цифры выберете, что вы хотите найти:\n" \
+                "1) Гипотенузу \n" \
+                "2) Катет".encode()</p>
+<h1 id="_2">Настраиваем хост</h1>
+<p>host = gethostname()
+port = 10000
+host_data = (host, port)</p>
+<p>server_socket = socket(AF_INET, SOCK_STREAM)
+server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+server_socket.bind(host_data)
+server_socket.listen()</p>
+<p>conn, addr = server_socket.accept()
+conn.sendall(hello_message)</p>
+<p>request = conn.recv(1024).decode()</p>
+<h1 id="_3">Обработать запрос и все посчитать</h1>
+<p>operation_type = int(request[0])
+request = request[1:]
+data = list(map(int, request.split(",")))</p>
+<p>result = ""
+if operation_type == 1:
+    answer = find_hip(data)
+    result = "Значение гипотенузы равно " + str(answer)
+else:
+    answer = find_cat(data)
+    result = "Значение катета равно " + str(answer)</p>
+<p>conn.sendall(result.encode())
+conn.close()</p>
+<p>Задача 3
+HTML-файл
+Файл: task3.html
+html
+Copy code</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<p>Этот HTML-файл представляет собой базовую структуру веб-страницы с пустым телом.</p>
+<p>Сервер
+Файл: server.py
+python
+Copy code
+from socket import *</p>
+<h1 id="_4">Настраиваем хост</h1>
+<p>host = gethostname()
+port = 10000
+host_data = (host, port)</p>
+<p>server_socket = socket(AF_INET, SOCK_STREAM)
+server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+server_socket.bind(host_data)
+server_socket.listen()</p>
+<p>conn, addr = server_socket.accept()
+request = conn.recv(4096)</p>
+<p>file = open("index.html", "r")
+file_data = file.read()</p>
+<p>header = b"HTTP/1.1 200\r\nserver: localhost\r\ncontent-type: text/html\r\ncharset=UTF-8\r\n\r\n"
+body = file_data.encode()
+response = header + body
+conn.sendall(response)
+conn.close()
+Этот сервер настроен на прослушивание порта 10000 и отправляет содержимое файла "index.html" в ответ на запрос.</p>
+<p>Клиент
+Файл: client.py
+python
+Copy code
+from socket import *</p>
+<p>HOST = (gethostname(), 10000)
+client = socket(AF_INET, SOCK_STREAM)</p>
+<p>client.connect(HOST)
+request = b"GET / HTTP/1.1\r\nHost: localhost\r\nAccept: text/html\r\nConnection: close\r\n\r\n"
+client.sendall(request)
+file_data = client.recv(4096)
+print(file_data.decode())
+Этот клиент подключается к серверу, отправляет GET-запрос и выводит полученные данные.</p>
+<p>Документация по Простому Чат-Приложению
+Данная документация предоставляет описание исходного кода для создания простого чат-приложения на основе сокетов и многопоточности. Приложение состоит из двух частей: клиента и сервера.</p>
+<p>Структура проекта
+Проект разделен на два файла: client.py и server.py. Каждый из этих файлов содержит код для соответствующей части приложения.</p>
+<p>client.py
+client.py представляет собой клиентскую часть чат-приложения. Клиент подключается к серверу и отправляет ему сообщения. Также клиент принимает сообщения от других клиентов через многопоточный механизм.</p>
+<p>Пример использования:</p>
+<p>python
+Copy code
+python client.py
+При запуске, клиент будет запрашивать ваше имя, а затем ожидать ввода сообщений. Введите 'q' для завершения работы.</p>
+<p>server.py
+server.py отвечает за серверную часть чат-приложения. Сервер принимает подключения от клиентов и ретранслирует полученные сообщения всем остальным клиентам. Ретрансляция происходит при помощи многопоточности.</p>
+<p>Пример использования:</p>
+<p>python
+Copy code
+python server.py
+Сервер будет слушать входящие соединения на адресе 0.0.0.0:5002.</p>
+<p>Важные моменты
+Разделитель токенов: Используется разделитель токенов (<SEP>) для отделения имени пользователя от текста сообщения. Это позволяет четко различать отправителя и сообщение внутри сетевого пакета.</p>
+<p>Многопоточность: Обе части приложения используют многопоточность для параллельной обработки входящих и исходящих сообщений.</p>
+<p>Завершение работы
+Чтобы завершить выполнение приложения, введите 'q' при запросе ввода сообщения на стороне клиента.</p>
+<p>Примечание: Это простое чат-приложение создано исключительно в учебных целях и может требовать дополнительной работы для использования в более продвинутых сценариях.</p>
+<p>Документация к MyHTTPServer
+MyHTTPServer - это простой HTTP-сервер, написанный на языке Python с использованием библиотеки socket. Этот сервер предоставляет минимальный веб-интерфейс для взаимодействия с данными об оценках по дисциплинам.</p>
+<p>Инициализация
+python
+Copy code
+server = MyHTTPServer(host, port)
+Создает экземпляр MyHTTPServer с указанным хостом (host) и портом (port). После создания сервер ожидает подключения клиентов.</p>
+<p>Методы
+serve_forever()
+python
+Copy code
+server.serve_forever()
+Ожидает постоянно подключения клиентов. Как только клиент подключается, вызывается метод serve_client() для обслуживания запроса.</p>
+<p>serve_client(client)
+python
+Copy code
+server.serve_client(client)
+Обрабатывает запрос от клиента. Передает данные клиента на обработку методу parse_request().</p>
+<p>parse_request(client, data)
+python
+Copy code
+server.parse_request(client, data)
+Разбирает запрос от клиента на составляющие, такие как метод, URL и параметры. Затем вызывает метод handle_request() для обработки запроса.</p>
+<p>handle_request(client, method, params)
+python
+Copy code
+server.handle_request(client, method, params)
+Обрабатывает запрос в зависимости от метода (GET или POST). Если метод GET, возвращает HTML-страницу с текущими оценками. Если метод POST, сохраняет новую оценку и возвращает сообщение об успешном сохранении.</p>
+<p>send_response(client, code, reason, body)
+python
+Copy code
+server.send_response(client, code, reason, body)
+Отправляет клиенту HTTP-ответ с указанными кодом (code), статусом (reason) и телом (body).</p>
+<p>grades_to_html()
+python
+Copy code
+server.grades_to_html()
+Генерирует HTML-страницу с текущими оценками. Используется для формирования ответа при запросе метода GET.</p>
+<p>Пример использования
+python
+Copy code
+if <strong>name</strong> == "<strong>main</strong>":
+    host = "127.0.0.1"
+    port = 8000
+    server = MyHTTPServer(host, port)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        server.conn.close()
+Создается экземпляр MyHTTPServer и ожидается подключение клиентов. Сервер работает бесконечно до получения сигнала прерывания (Ctrl+C), после чего закрывает соединение.</p>
+<p>Примечание: Этот сервер предназначен только для учебных и демонстрационных целей и не предоставляет надежное обслуживание HTTP-запросов.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      
+    
+  </body>
+</html>
